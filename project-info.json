@@ -1,0 +1,15 @@
+{
+  "name": "MySkills",
+  "description": "Um app simples feito usando React Native para gerenciamento de suas habilidades.",
+  "short_description": "Gerencie suas habilidades nesse app incrível",
+  "techs": [
+    {
+      "name": "React.js",
+      "url": "https://reactjs.org/"
+    },
+    {
+      "name": "React Native",
+      "url": "https://reactnative.dev/"
+    }
+  ]
+}
