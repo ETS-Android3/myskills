@@ -11,5 +11,9 @@
       "name": "React Native",
       "url": "https://reactnative.dev/"
     }
+  ],
+  "images": [
+    "https://raw.githubusercontent.com/saymondamasio/todos-mobile/main/.github/screenshot-1.png",
+    "https://raw.githubusercontent.com/saymondamasio/todos-mobile/main/.github/screenshot-2.png",
   ]
 }
