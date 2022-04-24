@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {FlatList, StyleSheet, Text, TextInput, View} from 'react-native';
-import SplashScreen from 'react-native-splash-screen';
 import {Button} from '../components/Button';
 import {SkillCard} from '../components/SkillCard';
 
@@ -19,10 +18,6 @@ export function Home() {
     } else {
       setGreeting('Good evening');
     }
-  }, []);
-
-  useEffect(() => {
-    SplashScreen.hide();
   }, []);
 
   function handleAddNewSkill() {

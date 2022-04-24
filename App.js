@@ -6,11 +6,22 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {StatusBar} from 'react-native';
+import codePush from 'react-native-code-push';
+import SplashScreen from 'react-native-splash-screen';
 import {Home} from './src/pages/Home';
 
-export default function App() {
+function App() {
+  useEffect(() => {
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE,
+    });
+
+    SplashScreen.hide();
+  }, []);
+
   return (
     <>
       <StatusBar
@@ -22,3 +33,7 @@ export default function App() {
     </>
   );
 }
+
+export default codePush({
+  checkFrequency: codePush.CheckFrequency.ON_APP_RESUME,
+})(App);
